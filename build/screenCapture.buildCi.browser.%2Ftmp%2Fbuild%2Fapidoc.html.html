@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/hiddentao/squel#readme"
-
-    >squel (v5.9.0)</a>
+    <a href="https://github.com/hiddentao/squel#readme">squel (v5.9.0)</a>
 </h1>
 <h4>SQL query string builder</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.squel">module squel</a><ol>
 
@@ -1640,7 +1633,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function _class4(fieldName) {
-  var options = arguments.length &#x3c;= 1 || arguments[1] === undefined ? {} : arguments[1];
+  var options = arguments.length &lt;= 1 || arguments[1] === undefined ? {} : arguments[1];
 
   _classCallCheck(this, _class4);
 
@@ -1690,11 +1683,11 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function _class32(options) {
-  var blocks = arguments.length &#x3c;= 1 || arguments[1] === undefined ? null : arguments[1];
+  var blocks = arguments.length &lt;= 1 || arguments[1] === undefined ? null : arguments[1];
 
   _classCallCheck(this, _class32);
 
-  blocks = blocks || [new cls.StringBlock(options, &#x27;DELETE&#x27;), new cls.TargetTableBlock(options), new cls.FromTableBlock(_extend({},
+  blocks = blocks || [new cls.StringBlock(options, 'DELETE'), new cls.TargetTableBlock(options), new cls.FromTableBlock(_extend({},
 options, {
     singleTable: true
   })), new cls.JoinBlock(options), new cls.WhereBlock(options), new cls.OrderByBlock(options), new cls.LimitBlock(options)];
@@ -1754,7 +1747,7 @@ options, {
   _classCallCheck(this, _class11);
 
   return _possibleConstructorReturn(this, Object.getPrototypeOf(_class11).call(this, _extend({}, options, {
-    prefix: &#x27;FROM&#x27;
+    prefix: 'FROM'
   })));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -1834,7 +1827,7 @@ options, {
   _classCallCheck(this, _class25);
 
   return _possibleConstructorReturn(this, Object.getPrototypeOf(_class25).call(this, _extend({}, options, {
-    verb: &#x27;HAVING&#x27;
+    verb: 'HAVING'
   })));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -1850,11 +1843,11 @@ options, {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function _class33(options) {
-  var blocks = arguments.length &#x3c;= 1 || arguments[1] === undefined ? null : arguments[1];
+  var blocks = arguments.length &lt;= 1 || arguments[1] === undefined ? null : arguments[1];
 
   _classCallCheck(this, _class33);
 
-  blocks = blocks || [new cls.StringBlock(options, &#x27;INSERT&#x27;), new cls.IntoTableBlock(options), new cls.InsertFieldValueBlock(options
+  blocks = blocks || [new cls.StringBlock(options, 'INSERT'), new cls.IntoTableBlock(options), new cls.InsertFieldValueBlock(options
 ), new cls.InsertFieldsFromQueryBlock(options)];
 
   return _possibleConstructorReturn(this, Object.getPrototypeOf(_class33).call(this, options, blocks));
@@ -1913,7 +1906,7 @@ options, {
   _classCallCheck(this, _class12);
 
   return _possibleConstructorReturn(this, Object.getPrototypeOf(_class12).call(this, _extend({}, options, {
-    prefix: &#x27;INTO&#x27;,
+    prefix: 'INTO',
     singleTable: true
   })));
 }</pre></li>
@@ -1953,7 +1946,7 @@ options, {
   _classCallCheck(this, _class22);
 
   return _possibleConstructorReturn(this, Object.getPrototypeOf(_class22).call(this, _extend({}, options, {
-    verb: &#x27;LIMIT&#x27;
+    verb: 'LIMIT'
   })));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -1972,7 +1965,7 @@ options, {
   _classCallCheck(this, _class21);
 
   return _possibleConstructorReturn(this, Object.getPrototypeOf(_class21).call(this, _extend({}, options, {
-    verb: &#x27;OFFSET&#x27;
+    verb: 'OFFSET'
   })));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -2030,12 +2023,12 @@ options, {
         var methodBody = exposedMethods[methodName];
 
         if (undefined !== _this33[methodName]) {
-          throw new Error(&#x27;Builder already has a builder method called: &#x27; + methodName);
+          throw new Error('Builder already has a builder method called: ' + methodName);
         }
 
         (function (block, name, body) {
           _this33[name] = function () {
-            for (var _len11 = arguments.length, args = Array(_len11), _key11 = 0; _key11 &#x3c; _len11; _key11++) {
+            for (var _len11 = arguments.length, args = Array(_len11), _key11 = 0; _key11 &lt; _len11; _key11++) {
               args[_key11] = arguments[_key11];
             }
 
@@ -2051,7 +2044,7 @@ options, {
     _iteratorError14 = err;
   } finally {
     try {
-      if (!_iteratorNormalCompletion14 &#x26;&#x26; _iterator14.return) {
+      if (!_iteratorNormalCompletion14 &amp;&amp; _iterator14.return) {
         _iterator14.return();
       }
     } finally {
@@ -2076,11 +2069,11 @@ options, {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function _class30(options) {
-  var blocks = arguments.length &#x3c;= 1 || arguments[1] === undefined ? null : arguments[1];
+  var blocks = arguments.length &lt;= 1 || arguments[1] === undefined ? null : arguments[1];
 
   _classCallCheck(this, _class30);
 
-  blocks = blocks || [new cls.StringBlock(options, &#x27;SELECT&#x27;), new cls.FunctionBlock(options), new cls.DistinctBlock(options), new
+  blocks = blocks || [new cls.StringBlock(options, 'SELECT'), new cls.FunctionBlock(options), new cls.DistinctBlock(options), new
  cls.GetFieldBlock(options), new cls.FromTableBlock(options), new cls.JoinBlock(options), new cls.WhereBlock(options), new cls.GroupByBlock
 (options), new cls.HavingBlock(options), new cls.OrderByBlock(options), new cls.LimitBlock(options), new cls.OffsetBlock(options
 ), new cls.UnionBlock(options)];
@@ -2132,7 +2125,7 @@ options, {
 // pragma query builder
 var PragmaQuery = function(options) {
   squel.cls.QueryBuilder.call(this, options, [
-      new squel.<span class="apidocCodeKeywordSpan">cls.StringBlock</span>(options, &#x27;PRAGMA&#x27;),
+      new squel.<span class="apidocCodeKeywordSpan">cls.StringBlock</span>(options, 'PRAGMA'),
       new CommandBlock(),
       new ParamBlock()
   ]);
@@ -2188,11 +2181,11 @@ util.inherits(PragmaQuery, squel.cls.QueryBuilder);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function _class31(options) {
-  var blocks = arguments.length &#x3c;= 1 || arguments[1] === undefined ? null : arguments[1];
+  var blocks = arguments.length &lt;= 1 || arguments[1] === undefined ? null : arguments[1];
 
   _classCallCheck(this, _class31);
 
-  blocks = blocks || [new cls.StringBlock(options, &#x27;UPDATE&#x27;), new cls.UpdateTableBlock(options), new cls.SetFieldBlock(options),
+  blocks = blocks || [new cls.StringBlock(options, 'UPDATE'), new cls.UpdateTableBlock(options), new cls.SetFieldBlock(options),
 new cls.WhereBlock(options), new cls.OrderByBlock(options), new cls.LimitBlock(options)];
 
   return _possibleConstructorReturn(this, Object.getPrototypeOf(_class31).call(this, options, blocks));
@@ -2230,7 +2223,7 @@ new cls.WhereBlock(options), new cls.OrderByBlock(options), new cls.LimitBlock(o
   _classCallCheck(this, _class24);
 
   return _possibleConstructorReturn(this, Object.getPrototypeOf(_class24).call(this, _extend({}, options, {
-    verb: &#x27;WHERE&#x27;
+    verb: 'WHERE'
   })));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -2246,7 +2239,7 @@ new cls.WhereBlock(options), new cls.OrderByBlock(options), new cls.LimitBlock(o
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function isSquelBuilder(obj) {
-  return obj &#x26;&#x26; !!obj._toParamString;
+  return obj &amp;&amp; !!obj._toParamString;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -2272,13 +2265,13 @@ new cls.WhereBlock(options), new cls.OrderByBlock(options), new cls.LimitBlock(o
 ```javascript
 // DELETE FROM test
 squel.<span class="apidocCodeKeywordSpan">delete</span>()
-.from(&#x22;test&#x22;)
+.from("test")
 .toString()
 
 // DELETE FROM table1 WHERE (table1.id = 2) ORDER BY id DESC LIMIT 2
 squel.delete()
-.from(&#x22;table1&#x22;)
-.where(&#x22;table1.id = ?&#x22;, 2)
+.from("table1")
+.where("table1.id = ?", 2)
 ...</pre></li>
     </ul>
 
@@ -2303,13 +2296,13 @@ There is also an expression builder which allows you to build complex expression
 ```javascript
 // test = 3 OR test = 4
 squel.<span class="apidocCodeKeywordSpan">expr</span>()
-.or(&#x22;test = 3&#x22;)
-.or(&#x22;test = 4&#x22;)
+.or("test = 3")
+.or("test = 4")
 .toString()
 
-// test = 3 AND (inner = 1 OR inner = 2) OR (inner = 3 AND inner = 4 OR (inner IN (&#x27;str1, &#x27;str2&#x27;, NULL)))
+// test = 3 AND (inner = 1 OR inner = 2) OR (inner = 3 AND inner = 4 OR (inner IN ('str1, 'str2', NULL)))
 squel.expr()
-.and(&#x22;test = 3&#x22;)
+.and("test = 3")
 ...</pre></li>
     </ul>
 
@@ -2327,14 +2320,14 @@ squel.expr()
 
   cls.DefaultQueryBuilderOptions.replaceSingleQuotes = true;
   cls.DefaultQueryBuilderOptions.autoQuoteAliasNames = false;
-  cls.DefaultQueryBuilderOptions.numberedParametersPrefix = &#x27;@&#x27;;
+  cls.DefaultQueryBuilderOptions.numberedParametersPrefix = '@';
 
   _squel.registerValueHandler(Date, function (date) {
-    return &#x27;\&#x27;&#x27; + date.getUTCFullYear() + &#x27;-&#x27; + (date.getUTCMonth() + 1) + &#x27;-&#x27; + date.getUTCDate() + &#x27; &#x27; + date.getUTCHours() + &#x27;:&#x27; +
-date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27;;
+    return '\'' + date.getUTCFullYear() + '-' + (date.getUTCMonth() + 1) + '-' + date.getUTCDate() + ' ' + date.getUTCHours() + ':' +
+date.getUTCMinutes() + ':' + date.getUTCSeconds() + '\'';
   });
 
-  //�LIMIT,  OFFSET x and TOP x
+  //ï¿½LIMIT,  OFFSET x and TOP x
   cls.MssqlLimitOffsetTopBlock = function (_cls$Block14) {
     _inherits(_class34, _cls$Block14);
 
@@ -2352,7 +2345,7 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
 <span class="apidocCodeCommentSpan">      /**
       # Set the LIMIT/TOP transformation.
       #
-      # Call this will override the previously set limit for this query. Also note that Passing 0 for &#x27;max&#x27; will remove
+      # Call this will override the previously set limit for this query. Also note that Passing 0 for 'max' will remove
       # the limit.
       */
 </span>      var _limit = function _limit(max) {
@@ -2388,12 +2381,12 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
         }
 
         _createClass(_class36, [{
-          key: &#x27;_toParamString&#x27;,
+          key: '_toParamString',
           value: function _toParamString() {
-            var str = &#x22;&#x22;;
+            var str = "";
 
-            if (this._parent._limits &#x26;&#x26; this._parent._offsets) {
-              str = &#x27;FETCH NEXT &#x27; + this._parent._limits + &#x27; ROWS ONLY&#x27;;
+            if (this._parent._limits &amp;&amp; this._parent._offsets) {
+              str = 'FETCH NEXT ' + this._parent._limits + ' ROWS ONLY';
             }
 
             return {
@@ -2419,12 +2412,12 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
         }
 
         _createClass(_class37, [{
-          key: &#x27;_toParamString&#x27;,
+          key: '_toParamString',
           value: function _toParamString() {
-            var str = &#x22;&#x22;;
+            var str = "";
 
-            if (this._parent._limits &#x26;&#x26; !this._parent._offsets) {
-              str = &#x27;TOP (&#x27; + this._parent._limits + &#x27;)&#x27;;
+            if (this._parent._limits &amp;&amp; !this._parent._offsets) {
+              str = 'TOP (' + this._parent._limits + ')';
             }
 
             return {
@@ -2447,14 +2440,14 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
         }
 
         _createClass(_class38, [{
-          key: &#x27;offset&#x27;,
+          key: 'offset',
           value: function offset(start) {
             this._parent._offsets = this._sanitizeLimitOffset(start);
           }
         }, {
-          key: &#x27;_toParamString&#x27;,
+          key: '_toParamString',
           value: function _toParamString() {
-            var str = &#x22;&#x22;;
+            var str = "";
 
             if (this._parent._ ...</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -2483,20 +2476,20 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
     }
 
     _createClass(_class46, [{
-      key: &#x27;onDupUpdate&#x27;,
+      key: 'onDupUpdate',
       value: function onDupUpdate(field, value, options) {
         this._set(field, value, options);
       }
     }, {
-      key: &#x27;_toParamString&#x27;,
+      key: '_toParamString',
       value: function _toParamString() {
-        var options = arguments.length &#x3c;= 0 || arguments[0] === undefined ? {} : arguments[0];
+        var options = arguments.length &lt;= 0 || arguments[0] === undefined ? {} : arguments[0];
 
-        var totalStr = &#x22;&#x22;,
+        var totalStr = "",
             totalValues = [];
 
-        for (var i = 0; i &#x3c; this._fields.length; ++i) {
-          totalStr = _pad(totalStr, &#x27;, &#x27;);
+        for (var i = 0; i &lt; this._fields.length; ++i) {
+          totalStr = _pad(totalStr, ', ');
 
           var field = this._fields[i];
 
@@ -2505,10 +2498,10 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
           var valueOptions = this._valueOptions[0][i];
 
           // e.g. if field is an expression such as: count = count + 1
-          if (typeof value === &#x27;undefined&#x27;) {
+          if (typeof value === 'undefined') {
             totalStr += field;
           } else {
-            var ret = this._buildString(field + &#x27; = &#x27; + this.options.parameterCharacter, [value], {
+            var ret = this._buildString(field + ' = ' + this.options.parameterCharacter, [value], {
               buildParameterized: options.buildParameterized,
               formattingOptions: valueOptions
             });
@@ -2519,7 +2512,7 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
         }
 
         return {
-          text: !totalStr.length ? &#x22;&#x22; : &#x27;ON DUPLICATE KEY UPDATE &#x27; + totalStr,
+          text: !totalStr.length ? "" : 'ON DUPLICATE KEY UPDATE ' + totalStr,
           values: totalValues
         };
       }
@@ -2533,11 +2526,11 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
     _inherits(_class47, _cls$QueryBuilder9);
 
     function _class47(options) {
-      var blocks = arguments.length &#x3c;= 1 || arguments[1] === undefined ? null : arguments[1];
+      var blocks = arguments.length &lt;= 1 || arguments[1] === undefined ? null : arguments[1];
 
       _classCallCheck(this, _class47);
 
-      blocks = blocks || [new cls.StringBlock(options, &#x27;INSERT&#x27;), new cls.IntoTableBlock(options), new cls.InsertFieldValueBlock
+      blocks = blocks || [new cls.StringBlock(options, 'INSERT'), new cls.IntoTableBlock(options), new cls.InsertFieldValueBlock
 (options), new cls.InsertFieldsFromQueryBlock(options), new cls.MysqlOnDuplicateKeyUpdateBlock(options)];
 
       return _possibleConstructorReturn(this, Object.getPrototypeOf(_class47).call(this, options, blocks));
@@ -2551,11 +2544,11 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
     _inherits(_class48, _cls$QueryBuilder10);
 
     function _class48(options) {
-      var blocks = arguments.length &#x3c;= 1 || arguments[1] === undefined ? null : arguments[1];
+      var blocks = arguments.length &lt;= 1 || arguments[1] === undefined ? null : arguments[1];
 
       _classCallCheck(this, _class48);
 
-      blocks = blocks || [new cls.StringBlock(options, &#x27;REPLACE&#x27;), new cls.IntoTableBlock(options), new cls.InsertFieldValueBlock
+      blocks = blocks || [new cls.StringBlock(options, 'REPLACE'), new cls.IntoTableBlock(options), new cls.InsertFieldValueBlock
 (options), new cls.InsertFieldsFromQueryBlock(options)];
 
       return _possibleConstructorReturn(this, Object.getPrototypeOf(_class48).call(this, options, blocks));
@@ -2598,7 +2591,7 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
     }
 
     _createClass(_class49, [{
-      key: &#x27;onConflict&#x27;,
+      key: 'onConflict',
       value: function onConflict(index, fields) {
         var _this56 = this;
 
@@ -2611,15 +2604,15 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
         }
       }
     }, {
-      key: &#x27;_toParamString&#x27;,
+      key: '_toParamString',
       value: function _toParamString() {
-        var options = arguments.length &#x3c;= 0 || arguments[0] === undefined ? {} : arguments[0];
+        var options = arguments.length &lt;= 0 || arguments[0] === undefined ? {} : arguments[0];
 
-        var totalStr = &#x22;&#x22;,
+        var totalStr = "",
             totalValues = [];
 
-        for (var i = 0; i &#x3c; this._fields.length; ++i) {
-          totalStr = _pad(totalStr, &#x27;, &#x27;);
+        for (var i = 0; i &lt; this._fields.length; ++i) {
+          totalStr = _pad(totalStr, ', ');
 
           var field = this._fields[i];
 
@@ -2628,10 +2621,10 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
           var valueOptions = this._valueOptions[0][i];
 
           // e.g. if field is an expression such as: count = count + 1
-          if (typeof value === &#x27;undefined&#x27;) {
+          if (typeof value === 'undefined') {
             totalStr += field;
           } else {
-            var ret = this._buildString(field + &#x27; = &#x27; + this.options.parameterCharacter, [value], {
+            var ret = this._buildString(field + ' = ' + this.options.parameterCharacter, [value], {
               buildParameterized: options.buildParameterized,
               formattingOptions: valueOptions
             });
@@ -2642,8 +2635,8 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
         }
 
         return {
-          text: this._dupIndex ? &#x27;ON CONFLICT (&#x27; + this._dupIndex + &#x27;) DO &#x27; + (!totalStr.length ? &#x22;NOTHING&#x22; : &#x27;UPDATE SET &#x27; + totalStr
-) : &#x27;&#x27;,
+          text: this._dupIndex ? 'ON CONFLICT (' + this._dupIndex + ') DO ' + (!totalStr.length ? "NOTHING" : 'UPDATE SET ' + totalStr
+) : '',
           values: totalValues
         };
       }
@@ -2666,17 +2659,17 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
     }
 
     _createClass(_class50, [{
-      key: &#x27;returning&#x27;,
+      key: 'returning',
       value: function returning(field) {
-        var alias = arguments.length &#x3c;= 1 || arguments[1] === undefined ? null : arguments[1];
-        var options = arguments.length &#x3c;= 2 || arguments[2] === undefined ? {} : arguments[2];
+        var alias = arguments.length &lt;= 1 || arguments[1] === undefined ? null : arguments[1];
+        var options = arguments.length &lt;= 2 || arguments[2] === undefined ? {} : arguments[2];
 
         alias = alias ? this._sanitizeFieldAlias(alias) : alias;
         field = this._sanitizeField(field);
 
-        // if field-alias combo already present then don&#x27;t add
+        // if field-alias combo already present then don't add
         var existingField = this._fields.filter(function (f) {
-          return f.name === field &#x26;&#x26; f.alias === alias;
+          return f.name === field &amp;&amp; f.alias === alias;
         });
         if (existingField.length) {
           return this;
@@ -2689,14 +2682,14 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
         });
       }
     }, {
-      key: &#x27;_toParamString&#x27;,
+      key: '_toParamString',
       value: function _toParamString() {
-        var options = arguments.length &#x3c;= 0 || arguments[0] === undefined ? {} : arguments[0];
+        var options = arguments.length &lt;= 0 || arguments[0] === undefined ? {} : arguments[0];
         var queryBuilder = options.queryBuilder;
         var buildParameterized = options.buildParameterized;
 
 
-        var totalStr = &#x27;&#x27;,
+        var totalStr = '',
             totalValues = [];
 
         var _iteratorNormalCompletion18 = true;
@@ -2708,7 +2701,7 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
 .next()).done); _iteratorNormalCompletion18 = true) {
             var field = _step18.value;
 
-            totalStr = _pad(totalStr, &#x22;, &#x22; ...</pre></li>
+            totalStr = _pad(totalStr, ", " ...</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -2733,13 +2726,13 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
 ```javascript
 // INSERT INTO test (f1) VALUES (1)
 squel.<span class="apidocCodeKeywordSpan">insert</span>()
-.into(&#x22;test&#x22;)
-.set(&#x22;f1&#x22;, 1)
+.into("test")
+.set("f1", 1)
 .toString()
 
-// INSERT INTO test (name, age) VALUES (&#x27;Thomas&#x27;, 29), (&#x27;Jane&#x27;, 31)
+// INSERT INTO test (name, age) VALUES ('Thomas', 29), ('Jane', 31)
 squel.insert()
-.into(&#x22;test&#x22;)
+.into("test")
 ...</pre></li>
     </ul>
 
@@ -2764,12 +2757,12 @@ specific object types to be handled:
 ```javascript
 // handler for objects of type Date
 squel.<span class="apidocCodeKeywordSpan">registerValueHandler</span>(Date, function(date) {
-return date.getFullYear() + &#x27;/&#x27; + (date.getMonth() + 1) + &#x27;/&#x27; + date.getDate();
+return date.getFullYear() + '/' + (date.getMonth() + 1) + '/' + date.getDate();
 });
 
 squel.update().
-.table(&#x27;students&#x27;)
-.set(&#x27;start_date&#x27;, new Date(2013, 5, 1))
+.table('students')
+.set('start_date', new Date(2013, 5, 1))
 .toString()
 ...</pre></li>
     </ul>
@@ -2822,21 +2815,21 @@ squel.update().
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-var squel = require(&#x22;squel&#x22;);
+var squel = require("squel");
 
 ### SELECT
 
 ```javascript
 // SELECT * FROM table
 squel.<span class="apidocCodeKeywordSpan">select</span>()
-.from(&#x22;table&#x22;)
+.from("table")
 .toString()
 
-// SELECT t1.id, t2.name FROM table `t1` LEFT JOIN table2 `t2` ON (t1.id = t2.id) WHERE (t2.name &#x3c;&#x3e; &#x27;Mark&#x27;)
-AND (t2.name &#x3c;&#x3e; &#x27;John&#x27;) GROUP BY t1.id
+// SELECT t1.id, t2.name FROM table `t1` LEFT JOIN table2 `t2` ON (t1.id = t2.id) WHERE (t2.name &lt;&gt; 'Mark')
+AND (t2.name &lt;&gt; 'John') GROUP BY t1.id
 squel.select()
-.from(&#x22;table&#x22;, &#x22;t1&#x22;)
-.field(&#x22;t1.id&#x22;)
+.from("table", "t1")
+.field("t1.id")
 ...</pre></li>
     </ul>
 
@@ -2856,15 +2849,15 @@ squel.select()
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-// SELECT `t1`.`id`, `t1`.`name` as &#x22;My name&#x22;, `t1`.`started` as &#x22;Date&#x22; FROM table `t1` WHERE age IN (RANGE(
+// SELECT `t1`.`id`, `t1`.`name` as "My name", `t1`.`started` as "Date" FROM table `t1` WHERE age IN (RANGE(
 1, 1.2)) ORDER BY id ASC LIMIT 20
 squel.select({ autoQuoteFieldNames: true })
-    .from(&#x22;table&#x22;, &#x22;t1&#x22;)
-    .field(&#x22;t1.id&#x22;)
-    .field(&#x22;t1.name&#x22;, &#x22;My name&#x22;)
-    .field(&#x22;t1.started&#x22;, &#x22;Date&#x22;)
-    .where(&#x22;age IN ?&#x22;, squel.<span class="apidocCodeKeywordSpan">str</span>(&#x27;RANGE(?, ?)&#x27;, 1, 1.2))
-    .order(&#x22;id&#x22;)
+    .from("table", "t1")
+    .field("t1.id")
+    .field("t1.name", "My name")
+    .field("t1.started", "Date")
+    .where("age IN ?", squel.<span class="apidocCodeKeywordSpan">str</span>('RANGE(?, ?)', 1, 1.2))
+    .order("id")
     .limit(20)
     .toString()
 ```
@@ -2894,14 +2887,14 @@ You can build parameterized queries:
 ```javascript
 // UPDATE test SET f1 = 1
 squel.<span class="apidocCodeKeywordSpan">update</span>()
-.table(&#x22;test&#x22;)
-.set(&#x22;f1&#x22;, 1)
+.table("test")
+.set("f1", 1)
 .toString()
 
-// UPDATE test, test2, test3 AS `a` SET test.id = 1, test2.val = 1.2, a.name = &#x22;Ram&#x22;, a.email = NULL, a.count = a.count
+// UPDATE test, test2, test3 AS `a` SET test.id = 1, test2.val = 1.2, a.name = "Ram", a.email = NULL, a.count = a.count
  + 1
 squel.update()
-.table(&#x22;test&#x22;)
+.table("test")
 ...</pre></li>
     </ul>
 
@@ -2915,7 +2908,7 @@ squel.update()
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">useFlavour = function () {
-  var flavour = arguments.length &#x3c;= 0 || arguments[0] === undefined ? null : arguments[0];
+  var flavour = arguments.length &lt;= 0 || arguments[0] === undefined ? null : arguments[0];
 
   if (!flavour) {
     return squel;
@@ -2932,7 +2925,7 @@ squel.update()
 
     return s;
   } else {
-    throw new Error(&#x27;Flavour not available: &#x27; + flavour);
+    throw new Error('Flavour not available: ' + flavour);
   }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
@@ -2944,15 +2937,15 @@ for use with Postgres).
 To use this in node.js:
 
 ```javascript
-var squel = require(&#x27;squel&#x27;).<span class="apidocCodeKeywordSpan">useFlavour</span>(&#x27;postgres&#x27;);
+var squel = require('squel').<span class="apidocCodeKeywordSpan">useFlavour</span>('postgres');
 ```
 
 For the browser:
 
 ```html
-&#x3c;script type=&#x22;text/javascript&#x22; src=&#x22;https://rawgithub.com/hiddentao/squel/master/squel.min.js&#x22;&#x3e;&#x3c
-;/script&#x3e;
-&#x3c;script type=&#x22;text/javascript&#x22;&#x3e;
+&lt;script type="text/javascript" src="https://rawgithub.com/hiddentao/squel/master/squel.min.js"&gt;&lt;
+;/script&gt;
+&lt;script type="text/javascript"&gt;
 ...</pre></li>
     </ul>
 
@@ -3118,7 +3111,7 @@ For the browser:
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function _class4(fieldName) {
-  var options = arguments.length &#x3c;= 1 || arguments[1] === undefined ? {} : arguments[1];
+  var options = arguments.length &lt;= 1 || arguments[1] === undefined ? {} : arguments[1];
 
   _classCallCheck(this, _class4);
 
@@ -3168,11 +3161,11 @@ For the browser:
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function _class32(options) {
-  var blocks = arguments.length &#x3c;= 1 || arguments[1] === undefined ? null : arguments[1];
+  var blocks = arguments.length &lt;= 1 || arguments[1] === undefined ? null : arguments[1];
 
   _classCallCheck(this, _class32);
 
-  blocks = blocks || [new cls.StringBlock(options, &#x27;DELETE&#x27;), new cls.TargetTableBlock(options), new cls.FromTableBlock(_extend({},
+  blocks = blocks || [new cls.StringBlock(options, 'DELETE'), new cls.TargetTableBlock(options), new cls.FromTableBlock(_extend({},
 options, {
     singleTable: true
   })), new cls.JoinBlock(options), new cls.WhereBlock(options), new cls.OrderByBlock(options), new cls.LimitBlock(options)];
@@ -3232,7 +3225,7 @@ options, {
   _classCallCheck(this, _class11);
 
   return _possibleConstructorReturn(this, Object.getPrototypeOf(_class11).call(this, _extend({}, options, {
-    prefix: &#x27;FROM&#x27;
+    prefix: 'FROM'
   })));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -3312,7 +3305,7 @@ options, {
   _classCallCheck(this, _class25);
 
   return _possibleConstructorReturn(this, Object.getPrototypeOf(_class25).call(this, _extend({}, options, {
-    verb: &#x27;HAVING&#x27;
+    verb: 'HAVING'
   })));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -3328,11 +3321,11 @@ options, {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function _class33(options) {
-  var blocks = arguments.length &#x3c;= 1 || arguments[1] === undefined ? null : arguments[1];
+  var blocks = arguments.length &lt;= 1 || arguments[1] === undefined ? null : arguments[1];
 
   _classCallCheck(this, _class33);
 
-  blocks = blocks || [new cls.StringBlock(options, &#x27;INSERT&#x27;), new cls.IntoTableBlock(options), new cls.InsertFieldValueBlock(options
+  blocks = blocks || [new cls.StringBlock(options, 'INSERT'), new cls.IntoTableBlock(options), new cls.InsertFieldValueBlock(options
 ), new cls.InsertFieldsFromQueryBlock(options)];
 
   return _possibleConstructorReturn(this, Object.getPrototypeOf(_class33).call(this, options, blocks));
@@ -3391,7 +3384,7 @@ options, {
   _classCallCheck(this, _class12);
 
   return _possibleConstructorReturn(this, Object.getPrototypeOf(_class12).call(this, _extend({}, options, {
-    prefix: &#x27;INTO&#x27;,
+    prefix: 'INTO',
     singleTable: true
   })));
 }</pre></li>
@@ -3431,7 +3424,7 @@ options, {
   _classCallCheck(this, _class22);
 
   return _possibleConstructorReturn(this, Object.getPrototypeOf(_class22).call(this, _extend({}, options, {
-    verb: &#x27;LIMIT&#x27;
+    verb: 'LIMIT'
   })));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -3450,7 +3443,7 @@ options, {
   _classCallCheck(this, _class21);
 
   return _possibleConstructorReturn(this, Object.getPrototypeOf(_class21).call(this, _extend({}, options, {
-    verb: &#x27;OFFSET&#x27;
+    verb: 'OFFSET'
   })));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -3508,12 +3501,12 @@ options, {
         var methodBody = exposedMethods[methodName];
 
         if (undefined !== _this33[methodName]) {
-          throw new Error(&#x27;Builder already has a builder method called: &#x27; + methodName);
+          throw new Error('Builder already has a builder method called: ' + methodName);
         }
 
         (function (block, name, body) {
           _this33[name] = function () {
-            for (var _len11 = arguments.length, args = Array(_len11), _key11 = 0; _key11 &#x3c; _len11; _key11++) {
+            for (var _len11 = arguments.length, args = Array(_len11), _key11 = 0; _key11 &lt; _len11; _key11++) {
               args[_key11] = arguments[_key11];
             }
 
@@ -3529,7 +3522,7 @@ options, {
     _iteratorError14 = err;
   } finally {
     try {
-      if (!_iteratorNormalCompletion14 &#x26;&#x26; _iterator14.return) {
+      if (!_iteratorNormalCompletion14 &amp;&amp; _iterator14.return) {
         _iterator14.return();
       }
     } finally {
@@ -3554,11 +3547,11 @@ options, {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function _class30(options) {
-  var blocks = arguments.length &#x3c;= 1 || arguments[1] === undefined ? null : arguments[1];
+  var blocks = arguments.length &lt;= 1 || arguments[1] === undefined ? null : arguments[1];
 
   _classCallCheck(this, _class30);
 
-  blocks = blocks || [new cls.StringBlock(options, &#x27;SELECT&#x27;), new cls.FunctionBlock(options), new cls.DistinctBlock(options), new
+  blocks = blocks || [new cls.StringBlock(options, 'SELECT'), new cls.FunctionBlock(options), new cls.DistinctBlock(options), new
  cls.GetFieldBlock(options), new cls.FromTableBlock(options), new cls.JoinBlock(options), new cls.WhereBlock(options), new cls.GroupByBlock
 (options), new cls.HavingBlock(options), new cls.OrderByBlock(options), new cls.LimitBlock(options), new cls.OffsetBlock(options
 ), new cls.UnionBlock(options)];
@@ -3610,7 +3603,7 @@ options, {
 // pragma query builder
 var PragmaQuery = function(options) {
   squel.cls.QueryBuilder.call(this, options, [
-      new squel.cls.<span class="apidocCodeKeywordSpan">StringBlock</span>(options, &#x27;PRAGMA&#x27;),
+      new squel.cls.<span class="apidocCodeKeywordSpan">StringBlock</span>(options, 'PRAGMA'),
       new CommandBlock(),
       new ParamBlock()
   ]);
@@ -3666,11 +3659,11 @@ util.inherits(PragmaQuery, squel.cls.QueryBuilder);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function _class31(options) {
-  var blocks = arguments.length &#x3c;= 1 || arguments[1] === undefined ? null : arguments[1];
+  var blocks = arguments.length &lt;= 1 || arguments[1] === undefined ? null : arguments[1];
 
   _classCallCheck(this, _class31);
 
-  blocks = blocks || [new cls.StringBlock(options, &#x27;UPDATE&#x27;), new cls.UpdateTableBlock(options), new cls.SetFieldBlock(options),
+  blocks = blocks || [new cls.StringBlock(options, 'UPDATE'), new cls.UpdateTableBlock(options), new cls.SetFieldBlock(options),
 new cls.WhereBlock(options), new cls.OrderByBlock(options), new cls.LimitBlock(options)];
 
   return _possibleConstructorReturn(this, Object.getPrototypeOf(_class31).call(this, options, blocks));
@@ -3708,7 +3701,7 @@ new cls.WhereBlock(options), new cls.OrderByBlock(options), new cls.LimitBlock(o
   _classCallCheck(this, _class24);
 
   return _possibleConstructorReturn(this, Object.getPrototypeOf(_class24).call(this, _extend({}, options, {
-    verb: &#x27;WHERE&#x27;
+    verb: 'WHERE'
   })));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -3724,7 +3717,7 @@ new cls.WhereBlock(options), new cls.OrderByBlock(options), new cls.LimitBlock(o
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function isSquelBuilder(obj) {
-  return obj &#x26;&#x26; !!obj._toParamString;
+  return obj &amp;&amp; !!obj._toParamString;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -3750,12 +3743,12 @@ specific object types to be handled:
 ```javascript
 // handler for objects of type Date
 squel.<span class="apidocCodeKeywordSpan">registerValueHandler</span>(Date, function(date) {
-return date.getFullYear() + &#x27;/&#x27; + (date.getMonth() + 1) + &#x27;/&#x27; + date.getDate();
+return date.getFullYear() + '/' + (date.getMonth() + 1) + '/' + date.getDate();
 });
 
 squel.update().
-.table(&#x27;students&#x27;)
-.set(&#x27;start_date&#x27;, new Date(2013, 5, 1))
+.table('students')
+.set('start_date', new Date(2013, 5, 1))
 .toString()
 ...</pre></li>
     </ul>
@@ -3928,7 +3921,7 @@ squel.update().
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function _class4(fieldName) {
-  var options = arguments.length &#x3c;= 1 || arguments[1] === undefined ? {} : arguments[1];
+  var options = arguments.length &lt;= 1 || arguments[1] === undefined ? {} : arguments[1];
 
   _classCallCheck(this, _class4);
 
@@ -3988,11 +3981,11 @@ squel.update().
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function _class32(options) {
-  var blocks = arguments.length &#x3c;= 1 || arguments[1] === undefined ? null : arguments[1];
+  var blocks = arguments.length &lt;= 1 || arguments[1] === undefined ? null : arguments[1];
 
   _classCallCheck(this, _class32);
 
-  blocks = blocks || [new cls.StringBlock(options, &#x27;DELETE&#x27;), new cls.TargetTableBlock(options), new cls.FromTableBlock(_extend({},
+  blocks = blocks || [new cls.StringBlock(options, 'DELETE'), new cls.TargetTableBlock(options), new cls.FromTableBlock(_extend({},
 options, {
     singleTable: true
   })), new cls.JoinBlock(options), new cls.WhereBlock(options), new cls.OrderByBlock(options), new cls.LimitBlock(options)];
@@ -4067,7 +4060,7 @@ options, {
   _classCallCheck(this, _class11);
 
   return _possibleConstructorReturn(this, Object.getPrototypeOf(_class11).call(this, _extend({}, options, {
-    prefix: &#x27;FROM&#x27;
+    prefix: 'FROM'
   })));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -4167,7 +4160,7 @@ options, {
   _classCallCheck(this, _class25);
 
   return _possibleConstructorReturn(this, Object.getPrototypeOf(_class25).call(this, _extend({}, options, {
-    verb: &#x27;HAVING&#x27;
+    verb: 'HAVING'
   })));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -4188,11 +4181,11 @@ options, {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function _class33(options) {
-  var blocks = arguments.length &#x3c;= 1 || arguments[1] === undefined ? null : arguments[1];
+  var blocks = arguments.length &lt;= 1 || arguments[1] === undefined ? null : arguments[1];
 
   _classCallCheck(this, _class33);
 
-  blocks = blocks || [new cls.StringBlock(options, &#x27;INSERT&#x27;), new cls.IntoTableBlock(options), new cls.InsertFieldValueBlock(options
+  blocks = blocks || [new cls.StringBlock(options, 'INSERT'), new cls.IntoTableBlock(options), new cls.InsertFieldValueBlock(options
 ), new cls.InsertFieldsFromQueryBlock(options)];
 
   return _possibleConstructorReturn(this, Object.getPrototypeOf(_class33).call(this, options, blocks));
@@ -4266,7 +4259,7 @@ options, {
   _classCallCheck(this, _class12);
 
   return _possibleConstructorReturn(this, Object.getPrototypeOf(_class12).call(this, _extend({}, options, {
-    prefix: &#x27;INTO&#x27;,
+    prefix: 'INTO',
     singleTable: true
   })));
 }</pre></li>
@@ -4316,7 +4309,7 @@ options, {
   _classCallCheck(this, _class22);
 
   return _possibleConstructorReturn(this, Object.getPrototypeOf(_class22).call(this, _extend({}, options, {
-    verb: &#x27;LIMIT&#x27;
+    verb: 'LIMIT'
   })));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -4340,7 +4333,7 @@ options, {
   _classCallCheck(this, _class21);
 
   return _possibleConstructorReturn(this, Object.getPrototypeOf(_class21).call(this, _extend({}, options, {
-    verb: &#x27;OFFSET&#x27;
+    verb: 'OFFSET'
   })));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -4408,12 +4401,12 @@ options, {
         var methodBody = exposedMethods[methodName];
 
         if (undefined !== _this33[methodName]) {
-          throw new Error(&#x27;Builder already has a builder method called: &#x27; + methodName);
+          throw new Error('Builder already has a builder method called: ' + methodName);
         }
 
         (function (block, name, body) {
           _this33[name] = function () {
-            for (var _len11 = arguments.length, args = Array(_len11), _key11 = 0; _key11 &#x3c; _len11; _key11++) {
+            for (var _len11 = arguments.length, args = Array(_len11), _key11 = 0; _key11 &lt; _len11; _key11++) {
               args[_key11] = arguments[_key11];
             }
 
@@ -4429,7 +4422,7 @@ options, {
     _iteratorError14 = err;
   } finally {
     try {
-      if (!_iteratorNormalCompletion14 &#x26;&#x26; _iterator14.return) {
+      if (!_iteratorNormalCompletion14 &amp;&amp; _iterator14.return) {
         _iterator14.return();
       }
     } finally {
@@ -4459,11 +4452,11 @@ options, {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function _class30(options) {
-  var blocks = arguments.length &#x3c;= 1 || arguments[1] === undefined ? null : arguments[1];
+  var blocks = arguments.length &lt;= 1 || arguments[1] === undefined ? null : arguments[1];
 
   _classCallCheck(this, _class30);
 
-  blocks = blocks || [new cls.StringBlock(options, &#x27;SELECT&#x27;), new cls.FunctionBlock(options), new cls.DistinctBlock(options), new
+  blocks = blocks || [new cls.StringBlock(options, 'SELECT'), new cls.FunctionBlock(options), new cls.DistinctBlock(options), new
  cls.GetFieldBlock(options), new cls.FromTableBlock(options), new cls.JoinBlock(options), new cls.WhereBlock(options), new cls.GroupByBlock
 (options), new cls.HavingBlock(options), new cls.OrderByBlock(options), new cls.LimitBlock(options), new cls.OffsetBlock(options
 ), new cls.UnionBlock(options)];
@@ -4525,7 +4518,7 @@ options, {
 // pragma query builder
 var PragmaQuery = function(options) {
   squel.cls.QueryBuilder.call(this, options, [
-      new squel.cls.<span class="apidocCodeKeywordSpan">StringBlock</span>(options, &#x27;PRAGMA&#x27;),
+      new squel.cls.<span class="apidocCodeKeywordSpan">StringBlock</span>(options, 'PRAGMA'),
       new CommandBlock(),
       new ParamBlock()
   ]);
@@ -4596,11 +4589,11 @@ util.inherits(PragmaQuery, squel.cls.QueryBuilder);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function _class31(options) {
-  var blocks = arguments.length &#x3c;= 1 || arguments[1] === undefined ? null : arguments[1];
+  var blocks = arguments.length &lt;= 1 || arguments[1] === undefined ? null : arguments[1];
 
   _classCallCheck(this, _class31);
 
-  blocks = blocks || [new cls.StringBlock(options, &#x27;UPDATE&#x27;), new cls.UpdateTableBlock(options), new cls.SetFieldBlock(options),
+  blocks = blocks || [new cls.StringBlock(options, 'UPDATE'), new cls.UpdateTableBlock(options), new cls.SetFieldBlock(options),
 new cls.WhereBlock(options), new cls.OrderByBlock(options), new cls.LimitBlock(options)];
 
   return _possibleConstructorReturn(this, Object.getPrototypeOf(_class31).call(this, options, blocks));
@@ -4648,7 +4641,7 @@ new cls.WhereBlock(options), new cls.OrderByBlock(options), new cls.LimitBlock(o
   _classCallCheck(this, _class24);
 
   return _possibleConstructorReturn(this, Object.getPrototypeOf(_class24).call(this, _extend({}, options, {
-    verb: &#x27;WHERE&#x27;
+    verb: 'WHERE'
   })));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -4669,7 +4662,7 @@ new cls.WhereBlock(options), new cls.OrderByBlock(options), new cls.LimitBlock(o
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function isSquelBuilder(obj) {
-  return obj &#x26;&#x26; !!obj._toParamString;
+  return obj &amp;&amp; !!obj._toParamString;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -4700,13 +4693,13 @@ new cls.WhereBlock(options), new cls.OrderByBlock(options), new cls.LimitBlock(o
 ```javascript
 // DELETE FROM test
 squel.<span class="apidocCodeKeywordSpan">delete</span>()
-.from(&#x22;test&#x22;)
+.from("test")
 .toString()
 
 // DELETE FROM table1 WHERE (table1.id = 2) ORDER BY id DESC LIMIT 2
 squel.delete()
-.from(&#x22;table1&#x22;)
-.where(&#x22;table1.id = ?&#x22;, 2)
+.from("table1")
+.where("table1.id = ?", 2)
 ...</pre></li>
     </ul>
 
@@ -4736,13 +4729,13 @@ There is also an expression builder which allows you to build complex expression
 ```javascript
 // test = 3 OR test = 4
 squel.<span class="apidocCodeKeywordSpan">expr</span>()
-.or(&#x22;test = 3&#x22;)
-.or(&#x22;test = 4&#x22;)
+.or("test = 3")
+.or("test = 4")
 .toString()
 
-// test = 3 AND (inner = 1 OR inner = 2) OR (inner = 3 AND inner = 4 OR (inner IN (&#x27;str1, &#x27;str2&#x27;, NULL)))
+// test = 3 AND (inner = 1 OR inner = 2) OR (inner = 3 AND inner = 4 OR (inner IN ('str1, 'str2', NULL)))
 squel.expr()
-.and(&#x22;test = 3&#x22;)
+.and("test = 3")
 ...</pre></li>
     </ul>
 
@@ -4765,14 +4758,14 @@ squel.expr()
 
   cls.DefaultQueryBuilderOptions.replaceSingleQuotes = true;
   cls.DefaultQueryBuilderOptions.autoQuoteAliasNames = false;
-  cls.DefaultQueryBuilderOptions.numberedParametersPrefix = &#x27;@&#x27;;
+  cls.DefaultQueryBuilderOptions.numberedParametersPrefix = '@';
 
   _squel.registerValueHandler(Date, function (date) {
-    return &#x27;\&#x27;&#x27; + date.getUTCFullYear() + &#x27;-&#x27; + (date.getUTCMonth() + 1) + &#x27;-&#x27; + date.getUTCDate() + &#x27; &#x27; + date.getUTCHours() + &#x27;:&#x27; +
-date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27;;
+    return '\'' + date.getUTCFullYear() + '-' + (date.getUTCMonth() + 1) + '-' + date.getUTCDate() + ' ' + date.getUTCHours() + ':' +
+date.getUTCMinutes() + ':' + date.getUTCSeconds() + '\'';
   });
 
-  //�LIMIT,  OFFSET x and TOP x
+  //ï¿½LIMIT,  OFFSET x and TOP x
   cls.MssqlLimitOffsetTopBlock = function (_cls$Block14) {
     _inherits(_class34, _cls$Block14);
 
@@ -4790,7 +4783,7 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
 <span class="apidocCodeCommentSpan">      /**
       # Set the LIMIT/TOP transformation.
       #
-      # Call this will override the previously set limit for this query. Also note that Passing 0 for &#x27;max&#x27; will remove
+      # Call this will override the previously set limit for this query. Also note that Passing 0 for 'max' will remove
       # the limit.
       */
 </span>      var _limit = function _limit(max) {
@@ -4826,12 +4819,12 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
         }
 
         _createClass(_class36, [{
-          key: &#x27;_toParamString&#x27;,
+          key: '_toParamString',
           value: function _toParamString() {
-            var str = &#x22;&#x22;;
+            var str = "";
 
-            if (this._parent._limits &#x26;&#x26; this._parent._offsets) {
-              str = &#x27;FETCH NEXT &#x27; + this._parent._limits + &#x27; ROWS ONLY&#x27;;
+            if (this._parent._limits &amp;&amp; this._parent._offsets) {
+              str = 'FETCH NEXT ' + this._parent._limits + ' ROWS ONLY';
             }
 
             return {
@@ -4857,12 +4850,12 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
         }
 
         _createClass(_class37, [{
-          key: &#x27;_toParamString&#x27;,
+          key: '_toParamString',
           value: function _toParamString() {
-            var str = &#x22;&#x22;;
+            var str = "";
 
-            if (this._parent._limits &#x26;&#x26; !this._parent._offsets) {
-              str = &#x27;TOP (&#x27; + this._parent._limits + &#x27;)&#x27;;
+            if (this._parent._limits &amp;&amp; !this._parent._offsets) {
+              str = 'TOP (' + this._parent._limits + ')';
             }
 
             return {
@@ -4885,14 +4878,14 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
         }
 
         _createClass(_class38, [{
-          key: &#x27;offset&#x27;,
+          key: 'offset',
           value: function offset(start) {
             this._parent._offsets = this._sanitizeLimitOffset(start);
           }
         }, {
-          key: &#x27;_toParamString&#x27;,
+          key: '_toParamString',
           value: function _toParamString() {
-            var str = &#x22;&#x22;;
+            var str = "";
 
             if (this._parent._ ...</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -4921,20 +4914,20 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
     }
 
     _createClass(_class46, [{
-      key: &#x27;onDupUpdate&#x27;,
+      key: 'onDupUpdate',
       value: function onDupUpdate(field, value, options) {
         this._set(field, value, options);
       }
     }, {
-      key: &#x27;_toParamString&#x27;,
+      key: '_toParamString',
       value: function _toParamString() {
-        var options = arguments.length &#x3c;= 0 || arguments[0] === undefined ? {} : arguments[0];
+        var options = arguments.length &lt;= 0 || arguments[0] === undefined ? {} : arguments[0];
 
-        var totalStr = &#x22;&#x22;,
+        var totalStr = "",
             totalValues = [];
 
-        for (var i = 0; i &#x3c; this._fields.length; ++i) {
-          totalStr = _pad(totalStr, &#x27;, &#x27;);
+        for (var i = 0; i &lt; this._fields.length; ++i) {
+          totalStr = _pad(totalStr, ', ');
 
           var field = this._fields[i];
 
@@ -4943,10 +4936,10 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
           var valueOptions = this._valueOptions[0][i];
 
           // e.g. if field is an expression such as: count = count + 1
-          if (typeof value === &#x27;undefined&#x27;) {
+          if (typeof value === 'undefined') {
             totalStr += field;
           } else {
-            var ret = this._buildString(field + &#x27; = &#x27; + this.options.parameterCharacter, [value], {
+            var ret = this._buildString(field + ' = ' + this.options.parameterCharacter, [value], {
               buildParameterized: options.buildParameterized,
               formattingOptions: valueOptions
             });
@@ -4957,7 +4950,7 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
         }
 
         return {
-          text: !totalStr.length ? &#x22;&#x22; : &#x27;ON DUPLICATE KEY UPDATE &#x27; + totalStr,
+          text: !totalStr.length ? "" : 'ON DUPLICATE KEY UPDATE ' + totalStr,
           values: totalValues
         };
       }
@@ -4971,11 +4964,11 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
     _inherits(_class47, _cls$QueryBuilder9);
 
     function _class47(options) {
-      var blocks = arguments.length &#x3c;= 1 || arguments[1] === undefined ? null : arguments[1];
+      var blocks = arguments.length &lt;= 1 || arguments[1] === undefined ? null : arguments[1];
 
       _classCallCheck(this, _class47);
 
-      blocks = blocks || [new cls.StringBlock(options, &#x27;INSERT&#x27;), new cls.IntoTableBlock(options), new cls.InsertFieldValueBlock
+      blocks = blocks || [new cls.StringBlock(options, 'INSERT'), new cls.IntoTableBlock(options), new cls.InsertFieldValueBlock
 (options), new cls.InsertFieldsFromQueryBlock(options), new cls.MysqlOnDuplicateKeyUpdateBlock(options)];
 
       return _possibleConstructorReturn(this, Object.getPrototypeOf(_class47).call(this, options, blocks));
@@ -4989,11 +4982,11 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
     _inherits(_class48, _cls$QueryBuilder10);
 
     function _class48(options) {
-      var blocks = arguments.length &#x3c;= 1 || arguments[1] === undefined ? null : arguments[1];
+      var blocks = arguments.length &lt;= 1 || arguments[1] === undefined ? null : arguments[1];
 
       _classCallCheck(this, _class48);
 
-      blocks = blocks || [new cls.StringBlock(options, &#x27;REPLACE&#x27;), new cls.IntoTableBlock(options), new cls.InsertFieldValueBlock
+      blocks = blocks || [new cls.StringBlock(options, 'REPLACE'), new cls.IntoTableBlock(options), new cls.InsertFieldValueBlock
 (options), new cls.InsertFieldsFromQueryBlock(options)];
 
       return _possibleConstructorReturn(this, Object.getPrototypeOf(_class48).call(this, options, blocks));
@@ -5036,7 +5029,7 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
     }
 
     _createClass(_class49, [{
-      key: &#x27;onConflict&#x27;,
+      key: 'onConflict',
       value: function onConflict(index, fields) {
         var _this56 = this;
 
@@ -5049,15 +5042,15 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
         }
       }
     }, {
-      key: &#x27;_toParamString&#x27;,
+      key: '_toParamString',
       value: function _toParamString() {
-        var options = arguments.length &#x3c;= 0 || arguments[0] === undefined ? {} : arguments[0];
+        var options = arguments.length &lt;= 0 || arguments[0] === undefined ? {} : arguments[0];
 
-        var totalStr = &#x22;&#x22;,
+        var totalStr = "",
             totalValues = [];
 
-        for (var i = 0; i &#x3c; this._fields.length; ++i) {
-          totalStr = _pad(totalStr, &#x27;, &#x27;);
+        for (var i = 0; i &lt; this._fields.length; ++i) {
+          totalStr = _pad(totalStr, ', ');
 
           var field = this._fields[i];
 
@@ -5066,10 +5059,10 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
           var valueOptions = this._valueOptions[0][i];
 
           // e.g. if field is an expression such as: count = count + 1
-          if (typeof value === &#x27;undefined&#x27;) {
+          if (typeof value === 'undefined') {
             totalStr += field;
           } else {
-            var ret = this._buildString(field + &#x27; = &#x27; + this.options.parameterCharacter, [value], {
+            var ret = this._buildString(field + ' = ' + this.options.parameterCharacter, [value], {
               buildParameterized: options.buildParameterized,
               formattingOptions: valueOptions
             });
@@ -5080,8 +5073,8 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
         }
 
         return {
-          text: this._dupIndex ? &#x27;ON CONFLICT (&#x27; + this._dupIndex + &#x27;) DO &#x27; + (!totalStr.length ? &#x22;NOTHING&#x22; : &#x27;UPDATE SET &#x27; + totalStr
-) : &#x27;&#x27;,
+          text: this._dupIndex ? 'ON CONFLICT (' + this._dupIndex + ') DO ' + (!totalStr.length ? "NOTHING" : 'UPDATE SET ' + totalStr
+) : '',
           values: totalValues
         };
       }
@@ -5104,17 +5097,17 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
     }
 
     _createClass(_class50, [{
-      key: &#x27;returning&#x27;,
+      key: 'returning',
       value: function returning(field) {
-        var alias = arguments.length &#x3c;= 1 || arguments[1] === undefined ? null : arguments[1];
-        var options = arguments.length &#x3c;= 2 || arguments[2] === undefined ? {} : arguments[2];
+        var alias = arguments.length &lt;= 1 || arguments[1] === undefined ? null : arguments[1];
+        var options = arguments.length &lt;= 2 || arguments[2] === undefined ? {} : arguments[2];
 
         alias = alias ? this._sanitizeFieldAlias(alias) : alias;
         field = this._sanitizeField(field);
 
-        // if field-alias combo already present then don&#x27;t add
+        // if field-alias combo already present then don't add
         var existingField = this._fields.filter(function (f) {
-          return f.name === field &#x26;&#x26; f.alias === alias;
+          return f.name === field &amp;&amp; f.alias === alias;
         });
         if (existingField.length) {
           return this;
@@ -5127,14 +5120,14 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
         });
       }
     }, {
-      key: &#x27;_toParamString&#x27;,
+      key: '_toParamString',
       value: function _toParamString() {
-        var options = arguments.length &#x3c;= 0 || arguments[0] === undefined ? {} : arguments[0];
+        var options = arguments.length &lt;= 0 || arguments[0] === undefined ? {} : arguments[0];
         var queryBuilder = options.queryBuilder;
         var buildParameterized = options.buildParameterized;
 
 
-        var totalStr = &#x27;&#x27;,
+        var totalStr = '',
             totalValues = [];
 
         var _iteratorNormalCompletion18 = true;
@@ -5146,7 +5139,7 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
 .next()).done); _iteratorNormalCompletion18 = true) {
             var field = _step18.value;
 
-            totalStr = _pad(totalStr, &#x22;, &#x22; ...</pre></li>
+            totalStr = _pad(totalStr, ", " ...</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -5169,14 +5162,14 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
 
   cls.DefaultQueryBuilderOptions.replaceSingleQuotes = true;
   cls.DefaultQueryBuilderOptions.autoQuoteAliasNames = false;
-  cls.DefaultQueryBuilderOptions.numberedParametersPrefix = &#x27;@&#x27;;
+  cls.DefaultQueryBuilderOptions.numberedParametersPrefix = '@';
 
   _squel.registerValueHandler(Date, function (date) {
-    return &#x27;\&#x27;&#x27; + date.getUTCFullYear() + &#x27;-&#x27; + (date.getUTCMonth() + 1) + &#x27;-&#x27; + date.getUTCDate() + &#x27; &#x27; + date.getUTCHours() + &#x27;:&#x27; +
-date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27;;
+    return '\'' + date.getUTCFullYear() + '-' + (date.getUTCMonth() + 1) + '-' + date.getUTCDate() + ' ' + date.getUTCHours() + ':' +
+date.getUTCMinutes() + ':' + date.getUTCSeconds() + '\'';
   });
 
-  //�LIMIT,  OFFSET x and TOP x
+  //ï¿½LIMIT,  OFFSET x and TOP x
   cls.MssqlLimitOffsetTopBlock = function (_cls$Block14) {
     _inherits(_class34, _cls$Block14);
 
@@ -5194,7 +5187,7 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
 <span class="apidocCodeCommentSpan">      /**
       # Set the LIMIT/TOP transformation.
       #
-      # Call this will override the previously set limit for this query. Also note that Passing 0 for &#x27;max&#x27; will remove
+      # Call this will override the previously set limit for this query. Also note that Passing 0 for 'max' will remove
       # the limit.
       */
 </span>      var _limit = function _limit(max) {
@@ -5230,12 +5223,12 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
         }
 
         _createClass(_class36, [{
-          key: &#x27;_toParamString&#x27;,
+          key: '_toParamString',
           value: function _toParamString() {
-            var str = &#x22;&#x22;;
+            var str = "";
 
-            if (this._parent._limits &#x26;&#x26; this._parent._offsets) {
-              str = &#x27;FETCH NEXT &#x27; + this._parent._limits + &#x27; ROWS ONLY&#x27;;
+            if (this._parent._limits &amp;&amp; this._parent._offsets) {
+              str = 'FETCH NEXT ' + this._parent._limits + ' ROWS ONLY';
             }
 
             return {
@@ -5261,12 +5254,12 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
         }
 
         _createClass(_class37, [{
-          key: &#x27;_toParamString&#x27;,
+          key: '_toParamString',
           value: function _toParamString() {
-            var str = &#x22;&#x22;;
+            var str = "";
 
-            if (this._parent._limits &#x26;&#x26; !this._parent._offsets) {
-              str = &#x27;TOP (&#x27; + this._parent._limits + &#x27;)&#x27;;
+            if (this._parent._limits &amp;&amp; !this._parent._offsets) {
+              str = 'TOP (' + this._parent._limits + ')';
             }
 
             return {
@@ -5289,14 +5282,14 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
         }
 
         _createClass(_class38, [{
-          key: &#x27;offset&#x27;,
+          key: 'offset',
           value: function offset(start) {
             this._parent._offsets = this._sanitizeLimitOffset(start);
           }
         }, {
-          key: &#x27;_toParamString&#x27;,
+          key: '_toParamString',
           value: function _toParamString() {
-            var str = &#x22;&#x22;;
+            var str = "";
 
             if (this._parent._ ...</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -5330,20 +5323,20 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
     }
 
     _createClass(_class46, [{
-      key: &#x27;onDupUpdate&#x27;,
+      key: 'onDupUpdate',
       value: function onDupUpdate(field, value, options) {
         this._set(field, value, options);
       }
     }, {
-      key: &#x27;_toParamString&#x27;,
+      key: '_toParamString',
       value: function _toParamString() {
-        var options = arguments.length &#x3c;= 0 || arguments[0] === undefined ? {} : arguments[0];
+        var options = arguments.length &lt;= 0 || arguments[0] === undefined ? {} : arguments[0];
 
-        var totalStr = &#x22;&#x22;,
+        var totalStr = "",
             totalValues = [];
 
-        for (var i = 0; i &#x3c; this._fields.length; ++i) {
-          totalStr = _pad(totalStr, &#x27;, &#x27;);
+        for (var i = 0; i &lt; this._fields.length; ++i) {
+          totalStr = _pad(totalStr, ', ');
 
           var field = this._fields[i];
 
@@ -5352,10 +5345,10 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
           var valueOptions = this._valueOptions[0][i];
 
           // e.g. if field is an expression such as: count = count + 1
-          if (typeof value === &#x27;undefined&#x27;) {
+          if (typeof value === 'undefined') {
             totalStr += field;
           } else {
-            var ret = this._buildString(field + &#x27; = &#x27; + this.options.parameterCharacter, [value], {
+            var ret = this._buildString(field + ' = ' + this.options.parameterCharacter, [value], {
               buildParameterized: options.buildParameterized,
               formattingOptions: valueOptions
             });
@@ -5366,7 +5359,7 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
         }
 
         return {
-          text: !totalStr.length ? &#x22;&#x22; : &#x27;ON DUPLICATE KEY UPDATE &#x27; + totalStr,
+          text: !totalStr.length ? "" : 'ON DUPLICATE KEY UPDATE ' + totalStr,
           values: totalValues
         };
       }
@@ -5380,11 +5373,11 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
     _inherits(_class47, _cls$QueryBuilder9);
 
     function _class47(options) {
-      var blocks = arguments.length &#x3c;= 1 || arguments[1] === undefined ? null : arguments[1];
+      var blocks = arguments.length &lt;= 1 || arguments[1] === undefined ? null : arguments[1];
 
       _classCallCheck(this, _class47);
 
-      blocks = blocks || [new cls.StringBlock(options, &#x27;INSERT&#x27;), new cls.IntoTableBlock(options), new cls.InsertFieldValueBlock
+      blocks = blocks || [new cls.StringBlock(options, 'INSERT'), new cls.IntoTableBlock(options), new cls.InsertFieldValueBlock
 (options), new cls.InsertFieldsFromQueryBlock(options), new cls.MysqlOnDuplicateKeyUpdateBlock(options)];
 
       return _possibleConstructorReturn(this, Object.getPrototypeOf(_class47).call(this, options, blocks));
@@ -5398,11 +5391,11 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
     _inherits(_class48, _cls$QueryBuilder10);
 
     function _class48(options) {
-      var blocks = arguments.length &#x3c;= 1 || arguments[1] === undefined ? null : arguments[1];
+      var blocks = arguments.length &lt;= 1 || arguments[1] === undefined ? null : arguments[1];
 
       _classCallCheck(this, _class48);
 
-      blocks = blocks || [new cls.StringBlock(options, &#x27;REPLACE&#x27;), new cls.IntoTableBlock(options), new cls.InsertFieldValueBlock
+      blocks = blocks || [new cls.StringBlock(options, 'REPLACE'), new cls.IntoTableBlock(options), new cls.InsertFieldValueBlock
 (options), new cls.InsertFieldsFromQueryBlock(options)];
 
       return _possibleConstructorReturn(this, Object.getPrototypeOf(_class48).call(this, options, blocks));
@@ -5450,7 +5443,7 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
     }
 
     _createClass(_class49, [{
-      key: &#x27;onConflict&#x27;,
+      key: 'onConflict',
       value: function onConflict(index, fields) {
         var _this56 = this;
 
@@ -5463,15 +5456,15 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
         }
       }
     }, {
-      key: &#x27;_toParamString&#x27;,
+      key: '_toParamString',
       value: function _toParamString() {
-        var options = arguments.length &#x3c;= 0 || arguments[0] === undefined ? {} : arguments[0];
+        var options = arguments.length &lt;= 0 || arguments[0] === undefined ? {} : arguments[0];
 
-        var totalStr = &#x22;&#x22;,
+        var totalStr = "",
             totalValues = [];
 
-        for (var i = 0; i &#x3c; this._fields.length; ++i) {
-          totalStr = _pad(totalStr, &#x27;, &#x27;);
+        for (var i = 0; i &lt; this._fields.length; ++i) {
+          totalStr = _pad(totalStr, ', ');
 
           var field = this._fields[i];
 
@@ -5480,10 +5473,10 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
           var valueOptions = this._valueOptions[0][i];
 
           // e.g. if field is an expression such as: count = count + 1
-          if (typeof value === &#x27;undefined&#x27;) {
+          if (typeof value === 'undefined') {
             totalStr += field;
           } else {
-            var ret = this._buildString(field + &#x27; = &#x27; + this.options.parameterCharacter, [value], {
+            var ret = this._buildString(field + ' = ' + this.options.parameterCharacter, [value], {
               buildParameterized: options.buildParameterized,
               formattingOptions: valueOptions
             });
@@ -5494,8 +5487,8 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
         }
 
         return {
-          text: this._dupIndex ? &#x27;ON CONFLICT (&#x27; + this._dupIndex + &#x27;) DO &#x27; + (!totalStr.length ? &#x22;NOTHING&#x22; : &#x27;UPDATE SET &#x27; + totalStr
-) : &#x27;&#x27;,
+          text: this._dupIndex ? 'ON CONFLICT (' + this._dupIndex + ') DO ' + (!totalStr.length ? "NOTHING" : 'UPDATE SET ' + totalStr
+) : '',
           values: totalValues
         };
       }
@@ -5518,17 +5511,17 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
     }
 
     _createClass(_class50, [{
-      key: &#x27;returning&#x27;,
+      key: 'returning',
       value: function returning(field) {
-        var alias = arguments.length &#x3c;= 1 || arguments[1] === undefined ? null : arguments[1];
-        var options = arguments.length &#x3c;= 2 || arguments[2] === undefined ? {} : arguments[2];
+        var alias = arguments.length &lt;= 1 || arguments[1] === undefined ? null : arguments[1];
+        var options = arguments.length &lt;= 2 || arguments[2] === undefined ? {} : arguments[2];
 
         alias = alias ? this._sanitizeFieldAlias(alias) : alias;
         field = this._sanitizeField(field);
 
-        // if field-alias combo already present then don&#x27;t add
+        // if field-alias combo already present then don't add
         var existingField = this._fields.filter(function (f) {
-          return f.name === field &#x26;&#x26; f.alias === alias;
+          return f.name === field &amp;&amp; f.alias === alias;
         });
         if (existingField.length) {
           return this;
@@ -5541,14 +5534,14 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
         });
       }
     }, {
-      key: &#x27;_toParamString&#x27;,
+      key: '_toParamString',
       value: function _toParamString() {
-        var options = arguments.length &#x3c;= 0 || arguments[0] === undefined ? {} : arguments[0];
+        var options = arguments.length &lt;= 0 || arguments[0] === undefined ? {} : arguments[0];
         var queryBuilder = options.queryBuilder;
         var buildParameterized = options.buildParameterized;
 
 
-        var totalStr = &#x27;&#x27;,
+        var totalStr = '',
             totalValues = [];
 
         var _iteratorNormalCompletion18 = true;
@@ -5560,7 +5553,7 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
 .next()).done); _iteratorNormalCompletion18 = true) {
             var field = _step18.value;
 
-            totalStr = _pad(totalStr, &#x22;, &#x22; ...</pre></li>
+            totalStr = _pad(totalStr, ", " ...</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -5590,13 +5583,13 @@ date.getUTCMinutes() + &#x27;:&#x27; + date.getUTCSeconds() + &#x27;\&#x27;&#x27
 ```javascript
 // INSERT INTO test (f1) VALUES (1)
 squel.<span class="apidocCodeKeywordSpan">insert</span>()
-.into(&#x22;test&#x22;)
-.set(&#x22;f1&#x22;, 1)
+.into("test")
+.set("f1", 1)
 .toString()
 
-// INSERT INTO test (name, age) VALUES (&#x27;Thomas&#x27;, 29), (&#x27;Jane&#x27;, 31)
+// INSERT INTO test (name, age) VALUES ('Thomas', 29), ('Jane', 31)
 squel.insert()
-.into(&#x22;test&#x22;)
+.into("test")
 ...</pre></li>
     </ul>
 
@@ -5626,12 +5619,12 @@ specific object types to be handled:
 ```javascript
 // handler for objects of type Date
 squel.<span class="apidocCodeKeywordSpan">registerValueHandler</span>(Date, function(date) {
-return date.getFullYear() + &#x27;/&#x27; + (date.getMonth() + 1) + &#x27;/&#x27; + date.getDate();
+return date.getFullYear() + '/' + (date.getMonth() + 1) + '/' + date.getDate();
 });
 
 squel.update().
-.table(&#x27;students&#x27;)
-.set(&#x27;start_date&#x27;, new Date(2013, 5, 1))
+.table('students')
+.set('start_date', new Date(2013, 5, 1))
 .toString()
 ...</pre></li>
     </ul>
@@ -5679,21 +5672,21 @@ squel.update().
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-var squel = require(&#x22;squel&#x22;);
+var squel = require("squel");
 
 ### SELECT
 
 ```javascript
 // SELECT * FROM table
 squel.<span class="apidocCodeKeywordSpan">select</span>()
-.from(&#x22;table&#x22;)
+.from("table")
 .toString()
 
-// SELECT t1.id, t2.name FROM table `t1` LEFT JOIN table2 `t2` ON (t1.id = t2.id) WHERE (t2.name &#x3c;&#x3e; &#x27;Mark&#x27;)
-AND (t2.name &#x3c;&#x3e; &#x27;John&#x27;) GROUP BY t1.id
+// SELECT t1.id, t2.name FROM table `t1` LEFT JOIN table2 `t2` ON (t1.id = t2.id) WHERE (t2.name &lt;&gt; 'Mark')
+AND (t2.name &lt;&gt; 'John') GROUP BY t1.id
 squel.select()
-.from(&#x22;table&#x22;, &#x22;t1&#x22;)
-.field(&#x22;t1.id&#x22;)
+.from("table", "t1")
+.field("t1.id")
 ...</pre></li>
     </ul>
 
@@ -5718,15 +5711,15 @@ squel.select()
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-// SELECT `t1`.`id`, `t1`.`name` as &#x22;My name&#x22;, `t1`.`started` as &#x22;Date&#x22; FROM table `t1` WHERE age IN (RANGE(
+// SELECT `t1`.`id`, `t1`.`name` as "My name", `t1`.`started` as "Date" FROM table `t1` WHERE age IN (RANGE(
 1, 1.2)) ORDER BY id ASC LIMIT 20
 squel.select({ autoQuoteFieldNames: true })
-    .from(&#x22;table&#x22;, &#x22;t1&#x22;)
-    .field(&#x22;t1.id&#x22;)
-    .field(&#x22;t1.name&#x22;, &#x22;My name&#x22;)
-    .field(&#x22;t1.started&#x22;, &#x22;Date&#x22;)
-    .where(&#x22;age IN ?&#x22;, squel.<span class="apidocCodeKeywordSpan">str</span>(&#x27;RANGE(?, ?)&#x27;, 1, 1.2))
-    .order(&#x22;id&#x22;)
+    .from("table", "t1")
+    .field("t1.id")
+    .field("t1.name", "My name")
+    .field("t1.started", "Date")
+    .where("age IN ?", squel.<span class="apidocCodeKeywordSpan">str</span>('RANGE(?, ?)', 1, 1.2))
+    .order("id")
     .limit(20)
     .toString()
 ```
@@ -5761,14 +5754,14 @@ You can build parameterized queries:
 ```javascript
 // UPDATE test SET f1 = 1
 squel.<span class="apidocCodeKeywordSpan">update</span>()
-.table(&#x22;test&#x22;)
-.set(&#x22;f1&#x22;, 1)
+.table("test")
+.set("f1", 1)
 .toString()
 
-// UPDATE test, test2, test3 AS `a` SET test.id = 1, test2.val = 1.2, a.name = &#x22;Ram&#x22;, a.email = NULL, a.count = a.count
+// UPDATE test, test2, test3 AS `a` SET test.id = 1, test2.val = 1.2, a.name = "Ram", a.email = NULL, a.count = a.count
  + 1
 squel.update()
-.table(&#x22;test&#x22;)
+.table("test")
 ...</pre></li>
     </ul>
 
@@ -5787,7 +5780,7 @@ squel.update()
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">useFlavour = function () {
-  var flavour = arguments.length &#x3c;= 0 || arguments[0] === undefined ? null : arguments[0];
+  var flavour = arguments.length &lt;= 0 || arguments[0] === undefined ? null : arguments[0];
 
   if (!flavour) {
     return squel;
@@ -5804,7 +5797,7 @@ squel.update()
 
     return s;
   } else {
-    throw new Error(&#x27;Flavour not available: &#x27; + flavour);
+    throw new Error('Flavour not available: ' + flavour);
   }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
@@ -5816,15 +5809,15 @@ for use with Postgres).
 To use this in node.js:
 
 ```javascript
-var squel = require(&#x27;squel&#x27;).<span class="apidocCodeKeywordSpan">useFlavour</span>(&#x27;postgres&#x27;);
+var squel = require('squel').<span class="apidocCodeKeywordSpan">useFlavour</span>('postgres');
 ```
 
 For the browser:
 
 ```html
-&#x3c;script type=&#x22;text/javascript&#x22; src=&#x22;https://rawgithub.com/hiddentao/squel/master/squel.min.js&#x22;&#x3e;&#x3c
-;/script&#x3e;
-&#x3c;script type=&#x22;text/javascript&#x22;&#x3e;
+&lt;script type="text/javascript" src="https://rawgithub.com/hiddentao/squel/master/squel.min.js"&gt;&lt;
+;/script&gt;
+&lt;script type="text/javascript"&gt;
 ...</pre></li>
     </ul>
 
@@ -5837,3 +5830,4 @@ For the browser:
     ]
 </div>
 </div>
+</body></html>
