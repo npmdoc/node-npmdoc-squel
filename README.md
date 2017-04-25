@@ -1,4 +1,7 @@
-# api documentation for  [squel (v5.9.0)](https://github.com/hiddentao/squel#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-squel.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-squel) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-squel.svg)](https://travis-ci.org/npmdoc/node-npmdoc-squel)
+# npmdoc-squel
+
+#### basic api documentation for  [squel (v5.9.1)](https://github.com/hiddentao/squel#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-squel.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-squel) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-squel.svg)](https://travis-ci.org/npmdoc/node-npmdoc-squel)
+
 #### SQL query string builder
 
 [![NPM](https://nodei.co/npm/squel.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/squel)
@@ -60,13 +63,13 @@
     },
     "directories": {},
     "dist": {
-        "shasum": "c7cfab96cfe7839a27a79bb2cbd9b3f2a1db24c6",
-        "tarball": "https://registry.npmjs.org/squel/-/squel-5.9.0.tgz"
+        "shasum": "126b6a55a863d72af5bac97fbf1b6f02591ebc93",
+        "tarball": "https://registry.npmjs.org/squel/-/squel-5.9.1.tgz"
     },
     "engines": {
         "node": ">= 0.12.0"
     },
-    "gitHead": "73071753e312d3272c39edc292c52dc74357544b",
+    "gitHead": "1bde13554eb6f04349e8b14d018281cda905e967",
     "homepage": "https://github.com/hiddentao/squel#readme",
     "keywords": [
         "sql",
@@ -90,7 +93,8 @@
         "prepublish": "npm run build",
         "test": "gulp"
     },
-    "version": "5.9.0"
+    "version": "5.9.1",
+    "bin": {}
 }
 ```
 
